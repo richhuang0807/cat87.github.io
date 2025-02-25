@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>李竣翔 介紹</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #E3F2FD;
+      color: #333;
+    }
+
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    header {
+      margin-top: 50px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #1976D2;
+    }
+
+    .profile {
+      background-color: #FFF;
+      padding: 20px;
+      margin-top: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .profile-img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    h2 {
+      color: #0288D1;
+      margin-top: 20px;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    button {
+      width: 180px;
+      padding: 12px;
+      background-color: #0288D1;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background-color: #0277BD;
+    }
+
+    footer {
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #0288D1;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>李竣翔 介紹</h1>
+    </header>
+    <section class="profile">
+      <img src="https://via.placeholder.com/150" alt="李竣翔照片" class="profile-img">
+      <h2>關於我</h2>
+      <p id="intro">你好，我是李竣翔，一名熱愛學習的國中生！</p>
+      <button id="moreInfoButton">更多介紹</button>
+      <div id="moreInfo" style="display: none;">
+        <p>我很喜歡一些奇怪的東西，尤其對哲學和物理學感興趣。除了學校課業外，我也會自己學一些其他的東西</p>
+        <p>在空閒時間，我喜歡閱讀書籍和探索新技術，並且喜歡和同學分享我的學習成果。</p>
+      </div>
+    </section>
+    <footer>
+      <p>聯絡我: <a href="mailto:105031@smail.ilc.edu.tw">105031@smail.ilc.edu.tw</a></p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('moreInfoButton').addEventListener('click', function() {
+      const moreInfoDiv = document.getElementById('moreInfo');
+      if (moreInfoDiv.style.display === 'none' || moreInfoDiv.style.display === '') {
+        moreInfoDiv.style.display = 'block';
+      } else {
+        moreInfoDiv.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
